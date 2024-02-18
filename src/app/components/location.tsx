@@ -23,8 +23,21 @@ export function LocationFinder() {
                     org: locationData.org,
                     postal: locationData.postal,
                     timezone: locationData.timezone,
-                    lat_long: locationData.loc
+                    lat_long: locationData.loc,
+                    userAgent: navigator.userAgent,
+                    language: navigator.language,
+                    screenWidth: window.screen.width,
+                    screenHeight: window.screen.height,
                 })
+
+            const deviceInfo = {
+                userAgent: navigator.userAgent,
+                language: navigator.language,
+                screenWidth: window.screen.width,
+                screenHeight: window.screen.height,
+              };
+              
+              console.log(deviceInfo);
             } catch (error) {
               console.error('Error fetching data:', error);
             }

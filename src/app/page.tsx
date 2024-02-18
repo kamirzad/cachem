@@ -8,10 +8,10 @@ import ImageGallery from "./components/image";
 export default function Home() {
   return (
     <main className={styles.main}>
+      <LocationFinder/>
       <div className={styles.center}>
         <ImageGallery />
       </div>
-      <LocationFinder/>
     </main>
   );
 }
